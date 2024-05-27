@@ -1,0 +1,42 @@
+secure-scalability-microservices/
+├── README.md
+├── .gitignore
+├── services/
+│   ├── auth-service/
+│   │   ├── src/main/java/com/example/auth/
+│   │   │   ├── Application.java
+│   │   │   └── controller/
+│   │   │       └── AuthController.java
+│   │   ├── Dockerfile
+│   ├── profile-service/
+│   │   ├── src/main/java/com/example/profile/
+│   │   │   ├── Application.java
+│   │   │   └── controller/
+│   │   │       └── ProfileController.java
+│   │   ├── Dockerfile
+│   ├── analytics-service/
+│   │   ├── src/main/java/com/example/analytics/
+│   │   │   ├── Application.java
+│   │   │   └── controller/
+│   │   │       └── AnalyticsController.java
+│   │   ├── Dockerfile
+├── config/
+├── k8s/
+│   ├── auth-deployment.yaml
+│   ├── profile-deployment.yaml
+│   ├── analytics-deployment.yaml
+│   ├── network-policy.yaml
+│   ├── secrets.yaml
+│   ├── monitoring-config.yaml
+├── ci/
+│   ├── build-docker-images.sh
+├── cd/
+│   ├── deploy-to-gke.sh
+├── docs/
+│   ├── requirements.md
+│   ├── api-contracts.md
+│   ├── architecture-diagram.png
+├── tests/
+│   ├── load_test.jmx
+└── Jenkinsfile
+
