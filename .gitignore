@@ -1,4 +1,4 @@
-# .gitignore
+touch .gitignore
 target/
 *.jar
 *.class
